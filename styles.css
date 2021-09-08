@@ -1,0 +1,11 @@
+body {
+  background: #9fa4c4;
+}
+h1{
+  text-align: center;
+}
+.Line1{
+  background: black;
+   height: 2px;
+   border: 0;
+}
