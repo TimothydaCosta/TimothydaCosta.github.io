@@ -1,6 +1,5 @@
 body {
-  background: #9fa4c4;
-  background: red;
+  background-image: url("pic.png");
 }
 h1{
   text-align: center;
@@ -28,3 +27,4 @@ th {
 .poem {
   text-align: right;
 }
+
