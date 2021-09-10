@@ -9,3 +9,21 @@ h1{
    height: 2px;
    border: 0;
 }
+
+table {
+  width: 93vw;
+  margin: auto;
+}
+
+th {
+  width: 33%;
+  text-align: center;
+}
+
+.site {
+  text-align: left;
+}
+
+.poem {
+  text-align: right;
+}
