@@ -1,8 +1,29 @@
 body {
-  background-image: url("pic.png");
+  background: rgb(119,13,191);
+background: linear-gradient(153deg, rgba(119,13,191,1) 7%, rgba(29,173,253,1) 50%, rgba(69,88,252,1) 72%);
+background-size: 300%;
+animation: 10s gradient ease infinite;
+height: 100vh;
+
+
+
+}
+
+@keyframes gradient{
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }
 h1{
   text-align: center;
+  font-family: 'Architects Daughter', cursive;
+
 }
 .Line1{
   background: black;
@@ -27,4 +48,13 @@ th {
 .poem {
   text-align: right;
 }
+.main-table a {
+color: white;
+font-size: 28;
+text-decoration: none;
+font-family: 'Architects Daughter', cursive;
 
+}
+.main-table a:hover {
+  text-decoration: underline;
+}
