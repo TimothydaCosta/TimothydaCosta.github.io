@@ -23,6 +23,7 @@ height: 100vh;
 h1{
   text-align: center;
   font-family: 'Architects Daughter', cursive;
+  text-shadow: 1px 1px white
 
 }
 .Line1{
@@ -53,6 +54,7 @@ color: white;
 font-size: 28;
 text-decoration: none;
 font-family: 'Architects Daughter', cursive;
+text-shadow:1px 1px black
 
 }
 .main-table a:hover {
