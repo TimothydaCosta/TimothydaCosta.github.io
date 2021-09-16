@@ -97,14 +97,7 @@ align-items: center;
 justify-content: center;
 }
 
-.blue {
 
-}
-
-.green {
-
-
-}
 
 .point {
   height: 350px;
@@ -123,6 +116,34 @@ justify-content: center;
 .flex-box{
     margin-right: 20px;
 }
-.div3 {
+.div3{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+.flex4, .flex5, .flex6{
+  flex: 1;
+  text-align: center;
+  width:100px;
+  height: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
+
+}
+.projects-img {
+  height: 250px;
+  box-shadow: 10px 10px 10px black;
+  position: relative;
+  transition: 0.55s;
+  right: 0;
+  bottom:0;
+
+}
+.projects-img:hover{
+  position:relative;
+  right: 20px;
+  bottom: 20px;
 }
