@@ -309,3 +309,5 @@ box-shadow: 1px 1px 1px black;
 }
 .proj-btn:hover{
   background:black;
+  cursor: pointer;
+}
