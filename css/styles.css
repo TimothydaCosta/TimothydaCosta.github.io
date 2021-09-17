@@ -288,3 +288,22 @@ text-shadow: 2px 2px 2px black;
 .taxt {
   line-height: 18px;
 }
+
+
+.proj-btn{
+  background: rgb(120,129,172);
+background: radial-gradient(circle, rgba(120,129,172,1) 0%, rgba(0,0,0,1) 100%);
+color: white;
+text-decoration: none;
+padding: 15px;
+position:absolute;
+margin: auto;
+width: 140px;
+text-align: center;
+border-radius: 30px;
+box-shadow: 1px 1px 1px black;
+}
+
+.btn-2 {
+  margin-left: 200px;
+}
