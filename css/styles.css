@@ -49,7 +49,7 @@ height: 300vh;
 .Line1{
   background: white;
    height: 1px;
-   box-shadow:3px 3px 10px;
+   box-shadow:4px 4px 5px;
 }
 .Line2{
   background:white;
@@ -203,13 +203,15 @@ justify-content: center;
 .bio-text{
   font-family: cursive;
   border-radius: 50%;
+  background: rgb(120,129,172);
+background: radial-gradient(circle, rgba(120,129,172,1) 0%, rgba(0,0,0,1) 100%);
   text-align:center;
-  background:white;
   position: relative;
   top:125px;
   width:230px;
   margin:auto;
   padding: auto;
+  color: white;
 }
 .table-languages {
   border: 5px solid black;
@@ -218,9 +220,16 @@ justify-content: center;
   top: 400px;
   background: rgb(120,129,172);
 background: radial-gradient(circle, rgba(120,129,172,1) 0%, rgba(0,0,0,1) 100%);
-  width: 50%;
   margin: auto;
   border-collapse: collapse;
+  width: 50vw;
+}
+.level1 {
+font-size: 25px;
+font-family:'Architects Daughter', cursive;
+font-weight: bold;
+color: white;
+text-shadow: 2px 2px 2px black;
 }
 .level {
   border: 3px solid black;
