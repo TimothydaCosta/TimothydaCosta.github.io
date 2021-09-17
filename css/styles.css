@@ -56,12 +56,12 @@ height: 300vh;
   height:1px;
   box-shadow:4px 4px 5px;
 }
-table {
+.main-table {
   width: 93vw;
   margin: auto;
 }
 
-th {
+.site, .trip, .poem {
   width: 33%;
   text-align: center;
 }
@@ -210,4 +210,31 @@ justify-content: center;
   width:230px;
   margin:auto;
   padding: auto;
+}
+.table-languages {
+  border: 5px solid black;
+  box-shadow: 3px 3px 10px black;
+  position:relative;
+  top: 400px;
+  background: rgb(120,129,172);
+background: radial-gradient(circle, rgba(120,129,172,1) 0%, rgba(0,0,0,1) 100%);
+  width: 50%;
+  margin: auto;
+  border-collapse: collapse;
+}
+.level {
+  border: 3px solid black;
+  font-family:'Architects Daughter', cursive;
+  text-decoration: underline;
+  font-size:22px;
+  color: white;
+  text-shadow: 2px 2px 2px black;
+}
+.Javas, .htmls, .csss, .javaa, .pythons {
+  text-align:center;
+  border: 2px solid black;
+   font-family:'Architects Daughter', cursive;
+ font-weight: bold;
+  color: white;
+  text-shadow: 2px 2px 2px black;
 }
