@@ -307,3 +307,5 @@ box-shadow: 1px 1px 1px black;
 .btn-2 {
   margin-left: 200px;
 }
+.proj-btn:hover{
+  background:black;
