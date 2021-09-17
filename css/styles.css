@@ -254,6 +254,8 @@ text-shadow: 2px 2px 2px black;
   text-shadow: 2px 2px 2px black;
 }
 .home-pic {
-  width: 95%;
-  padding: auto;
+  width: 99%;
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
 }
