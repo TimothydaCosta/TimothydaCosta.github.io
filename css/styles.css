@@ -143,34 +143,39 @@ justify-content: center;
   transition: 0.55s;
   right: 0;
   bottom:0;
+}
+@media screen and (max-width: 1100px){
+  .projects-img{
+    width: 70%;
+    height: 70%;
+  }
+
 
 }
+
+
 .projects-img:hover{
   position:relative;
   right: 20px;
   bottom: 20px;
 }
+.flox{
+  height:1%;
+
+}
 .rep{
   box-shadow:3px 3px 4px black;
-  position:absolute;
-  top:980px;
-  left:190px;
   background: #d0d2dc;
   padding: 0 40px;
 
 }
 .rap{
   box-shadow:3px 3px 4px black;
-  position:absolute;
-  top:980px;
   background: #d0d2dc;
   padding: 0 30px;
 }
 .rop{
   box-shadow:3px 3px 4px black;
-  position:absolute;
-  top:980px;
-  right:150px;
   background: #d0d2dc;
   padding: 0 40px;
 }
@@ -204,7 +209,7 @@ justify-content: center;
   margin:auto;
   padding: 5px;
   text-shadow: 1px 1px white;
-  
+
 }
 .bio-text{
   font-family: cursive;
