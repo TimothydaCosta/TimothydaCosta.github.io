@@ -263,4 +263,28 @@ text-shadow: 2px 2px 2px black;
   display: block;
   margin-right: auto;
   margin-left: auto;
+  box-shadow: 5px 5px 10px black;
+}
+
+.divpic {
+  position: relative;
+}
+.toxt {
+  Transition: 1s;
+  position: absolute;
+  top: 0;
+  z-index:2;
+  background-color: white;
+  border-radius:8%;
+  box-shadow: 5px 5px 10px black;
+  margin-left: 240px;
+  margin-top: 300px;
+  line-height: 1px;
+  font-family:'Architects Daughter', cursive;
+  padding: 10px;
+  height: 200px;
+}
+
+.taxt {
+  line-height: 18px;
 }
