@@ -3,11 +3,61 @@
     <head>
         <title>Projet dérivé de "Défi : écrire un poème"</title>
         <meta charset="utf-8">
+      <style>
+        body{
+         background: rgb(4,0,78);
+background: radial-gradient(circle, rgba(4,0,78,1) 0%, rgba(54,101,195,1) 71%, rgba(0,212,255,1) 100%);
+          background-size: 300%;
+animation: 10s gradient ease infinite;
+height: 300vh;
+        }
+        @keyframes gradient{
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+        .titl{
+          text-align: center;
+          position: relative;
+          margin: auto;
+          width: 500px;
+          border-radius: 5px;
+          color: white;
+          text-shadow: 4px 4px 10px black;
+          
+        }
+        .line10{
+          background: black;
+          height:2px;
+          border: none;
+          box-shadow: 3px 3px 10px black;
+        }
+        .poem-text {
+          text-align: center;
+          color: black;
+          font-family: cursive;
+          background: white;
+          position:relative;
+          margin:auto;
+          padding:auto;
+          width: 200px;
+          height: 120px;
+          border-radius: 5px;
+          font-size: 20px;
+          box-shadow: 4px 4px 10px black;
+        }
+      </style>
     </head>
     <body>
-    <h1> Poem</h1>
-        <h3> Wishing you were cute...</h3>
-    <p>Roses are red <br> Violets are blue <br> You are not cute <br> I bid you adieu  </p>
+    <h1 class="titl"> Wishing you were cute...</h1>
+       <hr class="line10">
+    <p class="poem-text">Roses are red <br> Violets are blue <br> You are not cute <br> I bid you adieu  </p>
     </body>
 </html>
 
