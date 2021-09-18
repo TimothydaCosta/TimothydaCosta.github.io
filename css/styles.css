@@ -258,6 +258,96 @@ text-shadow: 2px 2px 2px black;
   color: white;
   text-shadow: 2px 2px 2px black;
 }
+.proj-btn {
+  display:flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  text-align:center;
+  min-height:100vh;
+}
+
+.btn-1{
+  font-weight: bold;
+  font-family:'Architects Daughter', cursive;
+  width:200px;
+  height: 50px;
+  border:none;
+  color: white;
+  border-radius: 20px;
+  font-size: 22px;
+  outline: none;
+  position: relative;
+  z-index:1;
+   background: rgb(120,129,172);
+background: radial-gradient(circle, rgba(120,129,172,1) 0%, rgba(0,0,0,1) 100%);
+}
+.btn-1:hover{
+  color: white;
+  cursor: pointer;
+}
+.btn-1:before{
+  transition: 0.5s all ease;
+  position: absolute;
+  top:0;
+  left: 50%;
+  right: 50%;
+  bottom:0;
+  opacity:0;
+  content:"";
+  background: rgb(2,0,36);
+background: radial-gradient(circle, rgba(2,0,36,1) 0%, rgba(17,37,77,1) 35%, rgba(0,212,255,1) 100%);
+}
+
+.btn-1:hover:before{
+  transition: 0.5s all ease;
+  left:0;
+  right:0;
+  opacity: 1;
+  z-index:-1;
+  border-radius: 20px;
+}
+
+.btn-2{
+  font-weight: bold;
+  font-family:'Architects Daughter', cursive;
+   width:200px;
+  height: 50px;
+  border:none;
+  color: white;
+  border-radius: 20px;
+  font-size: 22px;
+  outline: none;
+  position: relative;
+  z-index:1;
+   background: rgb(120,129,172);
+background: radial-gradient(circle, rgba(120,129,172,1) 0%, rgba(0,0,0,1) 100%);
+}
+.btn-2:hover{
+  color: white;
+  cursor: pointer;
+}
+.btn-2:before{
+  transition: 0.5s all ease;
+  position: absolute;
+  top:0;
+  left: 50%;
+  right: 50%;
+  bottom:0;
+  opacity:0;
+  content:"";
+  background: rgb(2,0,36);
+background: radial-gradient(circle, rgba(2,0,36,1) 0%, rgba(17,37,77,1) 35%, rgba(0,212,255,1) 100%);
+}
+
+.btn-2:hover:before{
+  transition: 0.5s all ease;
+  left:0;
+  right:0;
+  opacity: 1;
+  z-index:-1;
+  border-radius: 20px;
+}
 .home-pic {
   width: 99%;
   display: block;
@@ -275,7 +365,7 @@ text-shadow: 2px 2px 2px black;
   top: 0;
   z-index:2;
   background-color: white;
-  border-radius:8%;
+  border-radius:5px;
   box-shadow: 5px 5px 10px black;
   margin-left: 240px;
   margin-top: 300px;
@@ -286,28 +376,8 @@ text-shadow: 2px 2px 2px black;
 }
 
 .taxt {
-  line-height: 18px;
+  line-height: 22px;
 }
 
 
-.proj-btn{
-  background: rgb(120,129,172);
-background: radial-gradient(circle, rgba(120,129,172,1) 0%, rgba(0,0,0,1) 100%);
-color: white;
-text-decoration: none;
-padding: 15px;
-position:absolute;
-margin: auto;
-width: 140px;
-text-align: center;
-border-radius: 30px;
-box-shadow: 1px 1px 1px black;
-}
 
-.btn-2 {
-  margin-left: 200px;
-}
-.proj-btn:hover{
-  background:black;
-  cursor: pointer;
-}
