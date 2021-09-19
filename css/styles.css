@@ -175,13 +175,14 @@ justify-content: center;
   padding: 0 30px;
 }
 .rop{
-  box-shadow:3px 3px 4px black;
+  box-shadow:3px 3px 10px black;
   background: #d0d2dc;
   padding: 0 40px;
 }
 .rep, .rap,.rop{
   font-family: 'Architects Daughter', cursive;
   font-size: 30px;
+  border-radius: 5px;
 }
 .moi{
   border-radius: 50%;
@@ -213,16 +214,19 @@ justify-content: center;
 }
 .bio-text{
   font-family: cursive;
-  border-radius: 50%;
+  border-radius: 100%;
   background: rgb(120,129,172);
 background: radial-gradient(circle, rgba(120,129,172,1) 0%, rgba(0,0,0,1) 100%);
   text-align:center;
+  align-items: center;
   position: relative;
-  top:125px;
-  width:230px;
+  top:140px;
   margin:auto;
   padding: auto;
   color: white;
+  height: 220px;
+  width: 420px;
+  box-shadow: 5px 5px 10px black;
 }
 .table-languages {
   border: 5px solid black;
@@ -233,8 +237,15 @@ background: radial-gradient(circle, rgba(120,129,172,1) 0%, rgba(0,0,0,1) 100%);
 background: radial-gradient(circle, rgba(120,129,172,1) 0%, rgba(0,0,0,1) 100%);
   margin: auto;
   border-collapse: collapse;
-  width: 50vw;
+  width: 35vw;
+  height: 5vw;
+  transition:0.55s;
 }
+.table-languages:hover{
+  width: 40vw;
+  height: 10vw;
+}
+
 .level1 {
 font-size: 25px;
 font-family:'Architects Daughter', cursive;
@@ -380,6 +391,184 @@ background: radial-gradient(circle, rgba(2,0,36,1) 0%, rgba(17,37,77,1) 35%, rgb
 .taxt {
   line-height: 22px;
 }
+.btn-3{
+  font-weight: bold;
+  font-family:'Architects Daughter', cursive;
+  box-shadow: 5px 5px 10px black;
+  width:150px;
+  height: 50px;
+  border:none;
+  color: black;
+  font-weight:bold;
+  border-radius: 20px;
+  font-size: 16px;
+  outline: none;
+  position: relative;
+  top:50px;
+  z-index:1;
+  background: rgb(173,173,179);
+background: radial-gradient(circle, rgba(173,173,179,1) 35%, rgba(196,197,199,1) 47%, rgba(255,255,255,1) 100%);
+}
+.btn-3:hover{
+  color: white;
+  cursor: pointer;
+}
+.btn-3:before{
+  transition: 0.5s all ease;
+  position: absolute;
+  top:0;
+  left: 50%;
+  right: 50%;
+  bottom:0;
+  opacity:0;
+  content:"";
+  background: rgb(2,0,36);
+background: radial-gradient(circle, rgba(2,0,36,1) 0%, rgba(17,37,77,1) 35%, rgba(0,212,255,1) 100%);
+}
+
+.btn-3:hover:before{
+  transition: 0.5s all ease;
+  left:0;
+  right:0;
+  opacity: 1;
+  z-index:-1;
+  border-radius: 20px;
+}
+
+.btn-4{
+  font-weight: bold;
+  font-family:'Architects Daughter', cursive;
+  box-shadow: 5px 5px 10px black;
+   width:150px;
+  height: 50px;
+  border:none;
+  color: black;
+  font-weight:bold;
+  border-radius: 20px;
+  font-size: 16px;
+  outline: none;
+  position: relative;
+  top:50px;
+  z-index:1;
+   background: rgb(173,173,179);
+background: radial-gradient(circle, rgba(173,173,179,1) 35%, rgba(196,197,199,1) 47%, rgba(255,255,255,1) 100%);
+}
+.btn-4:hover{
+  color: white;
+  cursor: pointer;
+}
+.btn-4:before{
+  transition: 0.5s all ease;
+  position: absolute;
+  top:0;
+  left: 50%;
+  right: 50%;
+  bottom:0;
+  opacity:0;
+  content:"";
+  background: rgb(2,0,36);
+background: radial-gradient(circle, rgba(2,0,36,1) 0%, rgba(17,37,77,1) 35%, rgba(0,212,255,1) 100%);
+}
+
+.btn-4:hover:before{
+  transition: 0.5s all ease;
+  left:0;
+  right:0;
+  opacity: 1;
+  z-index:-1;
+  border-radius: 20px;
+  
+    
+  }
+.btm-btns{
+  position: relative;
+  top:20px;
+}
+.line4{
+  background:black;
+  height:1px;
+  box-shadow:3px 3px 10px white;
+  position: relative;
+  top:250px;
+}
+.div4{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+.flex7, .flex8, .flex9{
+  flex: 1;
+  text-align: center;
+  width:100px;
+  height: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
 
 
+}
+.liens-src {
+  height: 250px;
+  box-shadow: 10px 10px 10px black;
+  position: relative;
+  transition: 0.55s;
+  top: 250px;
+  right: 0;
+  bottom:0;
+}
+.liens-src:hover{
+  position:relative;
+  right: 20px;
+  bottom: 20px;
+}
+.flix{
+  height:1%;
 
+}
+.rwp{
+  box-shadow:3px 3px 8px black;
+  background: #d0d2dc;
+  padding: 0 40px;
+
+}
+.rnp{
+  box-shadow:3px 3px 4px black;
+  background: #d0d2dc;
+  padding: 0 30px;
+}
+.rip{
+  box-shadow:3px 3px 4px black;
+  background: #d0d2dc;
+  padding: 0 40px;
+}
+.rwp, .rnp,.rip{
+  font-family: 'Architects Daughter', cursive;
+  font-size: 30px;
+  position:relative;
+  top: 225px;
+  border-radius:5px;
+  
+}
+.fotter{
+  background: rgb(173,173,179);
+background: radial-gradient(circle, rgba(173,173,179,1) 35%, rgba(196,197,199,1) 47%, rgba(255,255,255,1) 100%);
+  text-align:center;
+  box-shadow:5px 5px 10px black;
+  border-radius: 3px;
+  position: relative;
+  top: 450px;
+  padding:auto;
+  margin:auto;
+  height: 20px;
+  width: 150px;
+  font-size: 16px;
+ 
+}
+.fetter {
+  font-size: 16px;
+  color: black;
+font-family: cursive;
+}
