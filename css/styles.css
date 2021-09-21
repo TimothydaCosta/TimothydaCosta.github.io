@@ -253,13 +253,13 @@ body {
   margin: auto;
   border-collapse: collapse;
   width: 35vw;
-  height: 5vw;
+  height: 5vh;
   transition: 0.55s;
 }
 
 .table-languages:hover {
   width: 40vw;
-  height: 10vw;
+  height: 10vh;
 }
 
 .level1 {
