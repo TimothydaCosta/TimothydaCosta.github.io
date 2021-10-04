@@ -1,11 +1,11 @@
-var i = "oui"
+var i = true
 var table = [];
 var somme = 0;
 var y = 0;
 
-while (i === "oui") {
+while (i === true) {
   table.push(parseInt(prompt("Entrer un nombre")))
-  i = prompt("Voulez-vous continuer? Oui/non");
+  i = confirm("Voulez-vous continuer?");
 }
 
 
