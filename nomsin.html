@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <script>
+      var name=prompt("Prenom");
+var middlename=prompt("Nom du milieu");
+var lastname=prompt("Nom de famille");
+
+
+var initial= name.slice(0, 1).toUpperCase();
+var initial2= middlename.slice(0, 1).toUpperCase();
+var initial3= lastname.slice(0, 1).toUpperCase();
+
+
+var utilise= name.slice(0, 1).toLowerCase();
+var utilise1= middlename.slice(0, 1).toLowerCase();
+var utilise2= lastname.toLowerCase();
+
+alert(initial + "." + initial2 + "." + initial3);
+
+alert(name + " " + middlename + " " + lastname);
+
+alert(utilise + utilise1 + utilise2);
+
+    </script>
+  </body>
+</html>
