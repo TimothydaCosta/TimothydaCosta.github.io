@@ -7,9 +7,16 @@
 <style>
 html {
   scroll-behavior: smooth;
+  font-family: 'Yanone Kaffeesatz', sans-serif;
+  
+}
+body{
+  background: rgb(99,99,99);
+background: linear-gradient(180deg, rgba(99,99,99,1) 27%, rgba(0,0,0,1) 89%);
+color: white;
 }
 .btnRecu{
-  border: 2px solid black;
+  border: 2px solid white;
   width: 200px;
   margin: auto;
   padding: aut
@@ -29,6 +36,58 @@ img{
 .recu1{
   text-align:center;
   line-height: 5px;
+}
+h1{
+  text-decoration: underline;
+  text-shadow: 1px 1px 4px black;
+}
+.btn-3 {
+  font-weight: bold;
+  font-family: 'Architects Daughter', cursive;
+  box-shadow: 5px 5px 10px black;
+  width: 130px;
+  height: 25px;
+  border: none;
+  color: black;
+  font-weight: bold;
+  border-radius: 20px;
+  font-size: 10px;
+  outline: none;
+  position: relative;
+  z-index: 1;
+  background: rgb(173, 173, 179);
+  background: radial-gradient(circle, rgba(173, 173, 179, 1) 35%, rgba(196, 197, 199, 1) 47%, rgba(255, 255, 255, 1) 100%);
+  /* changer le look des boutons. donner un background de début pour l'animation. z-index est 1 pour assurer que le texte est là lors de l'animation */
+}
+
+.btn-3:hover {
+  color: white;
+  cursor: pointer;
+  /* changer que le curseur est un pointeur */
+}
+
+.btn-3:before {
+  transition: 0.5s all ease;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  right: 50%;
+  bottom: 0;
+  opacity: 0;
+  content: "";
+  background: rgb(2, 0, 36);
+  background: radial-gradient(circle, rgba(2, 0, 36, 1) 0%, rgba(17, 37, 77, 1) 35%, rgba(0, 212, 255, 1) 100%);
+  /* ajouter la transition spécifique que je voulait. top:50% et bottom 50% pour que l'animation commence dans le milieur */
+}
+
+.btn-3:hover:before {
+  transition: 0.5s all ease;
+  left: 0;
+  right: 0;
+  opacity: 1;
+  z-index: -1;
+  border-radius: 20px;
+ 
 }
 </style>
   </head>
@@ -65,7 +124,7 @@ img{
         </select>
         <br><br>
    <!--      bouton confirm pour afficher le recu -->
-        <a href="#btnrecu"><input type="button" id="recuclick" onclick="recu()" value="Placer la Commande"></a>
+        <a href="#btnrecu"><button id="recuclick" onclick="recu()" class= "btn-3">Placer la Commande</button></a>
         <br><br>
       </div>
     <!--   affichage du reçu -->
