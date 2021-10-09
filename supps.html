@@ -161,19 +161,19 @@ function recu() {
   /* des if pour vérifier ceux qui ont été croché dans le check box */
   /* if créér des messages pour chaque item */
     if (item1.checked) {
-      preWorkout = table[0][0] + "&nbsp &nbsp &nbsp &nbsp &nbsp" + table[0][1] + "$";
+      preWorkout = table[0][0] + "&nbsp &nbsp &nbsp &nbsp &nbsp" + table[0][1] + "$<br>";
     }
     if (item2.checked) {
-      proteinePowder = table[1][0] + "&nbsp &nbsp &nbsp &nbsp &nbsp" + table[1][1] + "$";
+      proteinePowder = table[1][0] + "&nbsp &nbsp &nbsp &nbsp &nbsp" + table[1][1] + "$<br>";
     }
     if (item3.checked) {
-      acidesAminos = table[2][0] + "&nbsp &nbsp &nbsp &nbsp &nbsp" + table[2][1] + "$";
+      acidesAminos = table[2][0] + "&nbsp &nbsp &nbsp &nbsp &nbsp" + table[2][1] + "$<br>";
     }
     if (item4.checked) {
-      vitamines = table[3][0] + "&nbsp &nbsp &nbsp &nbsp &nbsp" + table[3][1] + "$";
+      vitamines = table[3][0] + "&nbsp &nbsp &nbsp &nbsp &nbsp" + table[3][1] + "$<br>";
     }
     if (item5.checked) {
-      tren = table[4][0] + "&nbsp &nbsp &nbsp &nbsp &nbsp" + table[4][1] + "$";
+      tren = table[4][0] + "&nbsp &nbsp &nbsp &nbsp &nbsp" + table[4][1] + "$<br>";
     }
   
   /* variables commence à 0 pour ajouter plus tard */
@@ -215,12 +215,13 @@ function recu() {
   
   
 /* ce qui affiche dans le div lorsque le bouton est clické */
-    var message = "<h3 class='recu1'>Reçu</h3>" +preWorkout + "<br> " + proteinePowder + "<br> " + acidesAminos + "<br> " + vitamines + "<br> " + tren + "<hr>Sous-Total: &nbsp &nbsp &nbsp &nbsp &nbsp" + sous.toFixed(2) + "$<br>Taxes (" + taxeNom + "): &nbsp &nbsp &nbsp &nbsp &nbsp" + taxe.toFixed(2) + "$<br>Total: &nbsp &nbsp &nbsp &nbsp &nbsp" + total.toFixed(2);
+    var message = "<h3 class='recu1'>Reçu<hr></h3>" + preWorkout + proteinePowder + acidesAminos + vitamines + tren + "<hr>Sous-Total: &nbsp &nbsp &nbsp &nbsp &nbsp" + sous.toFixed(2) + "$<br>Taxes (" + taxeNom + "): &nbsp &nbsp &nbsp &nbsp &nbsp" + taxe.toFixed(2) + "$<br>Total: &nbsp &nbsp &nbsp &nbsp &nbsp" + total.toFixed(2);
 /* affiche le message dans html */
     afficheRecu.innerHTML = message;
 
 
   }
+
 
 </script>
    
