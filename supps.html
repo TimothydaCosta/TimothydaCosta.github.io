@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset="utf-8">
+    <title>Magasin Timmy</title>
+<style>
+html {
+  scroll-behavior: smooth;
+}
+.btnRecu{
+  border: 2px solid black;
+  width: 200px;
+  margin: auto;
+  padding: aut
+  
+}
+img{
+  height: 40px;
+}
+.tous{
+  text-align: center;
+}
+.expli{
+  width: 300px;
+  text-align: center;
+  margin:auto;
+}
+.recu1{
+  text-align:center;
+  line-height: 5px;
+}
+</style>
+  </head>
+
+  <body>
+    
+      <div class="tous">
+
+        <h1>Suppléments Timmy</h1>
+
+        <div class="expli">
+<!-- explication de mon entreprise -->
+          <p>
+            Bienvenue à mon site de suppléments! Ici, vous pouvez trouver une énorme sélection de suppléments parfait pour le monde de la musculation. De la créatine au pre workout, nous avons tous! Si vous voulez êtres super gros et grand, achète tous. Assurez-vous d'avoir la bonne province pour les taxes!
+          </p>
+        </div>
+        <label for="supps">
+       <!--  titre de mes option checkbox -->
+          <h3>Suppléments:</h3></label><br>
+         <!--  inputs checkbox pour les options de suppléments -->
+        <input type="checkbox" id="pre" name="items" value="Pre Workout">Pre Workout 42,99$ <img src="https://m.media-amazon.com/images/I/71gzLs4RXAS._AC_SS450_.jpg"><br>
+        <input type="checkbox" id="pro" name="items" value="Poudre Proteine">Poudre Protéine 103,99$<img src="https://cdn.shopify.com/s/files/1/0353/7017/2475/products/BioXPowerWheyIsolate_700x700.png?v=1585445823"><br>
+        <input type="checkbox" id="ami" name="items" value="Acides Aminos">Creatine 25,99$<img src="https://m.media-amazon.com/images/I/61HK8PiI5qL._AC_SL1500_.jpg"><br>
+        <input type="checkbox" id="vit" name="items" value="Vitamines">Vitamines 10,99$<img src="https://m.media-amazon.com/images/I/71rpk5dBHgL._AC_SX425_.jpg"><br>
+        <input type="checkbox" id="tre" name="items" value="TREN">TREN 160,99$<img src="https://top-steroids-online.com/wp-content/uploads/2019/03/tren-150-dragon-pharma.jpg"><br>
+
+        <br>
+
+        <label for="province">Province:</label>
+      <!--   select pour choix de province et taxe -->
+        <select id="province">
+          <option value="Ontario">Ontario</option>
+          <option value="Quebec">Quebec</option>
+        </select>
+        <br><br>
+   <!--      bouton confirm pour afficher le recu -->
+        <a href="#btnrecu"><input type="button" id="recuclick" onclick="recu()" value="Placer la Commande"></a>
+        <br><br>
+      </div>
+    <!--   affichage du reçu -->
+      <div id="btnrecu" class="btnRecu">
+      </div>
+
+<script>
+/* fonction pour afficher reçu */
+function recu() {  
+    /* table pour stocker les donnés des items */
+    var table = [
+      ["Pre Workout", 42.99],
+      ["Poudre Proteine", 103.99],
+      ["Acides Amino", 25.99],
+      ["MultiVitamines", 10.99],
+      ["TREN...500mg", 160.99],
+    ];
+ /*  variable pour accédé au div qui affiche le reçu */
+    var afficheRecu = document.getElementById("btnrecu");
+    var liste = document.getElementsByName("items");
+   /*  cherche le value du select */
+    var prov = document.getElementById("province").value;
+  /* si items sont cocher */
+    var item1 = document.getElementById("pre");
+    var item2 = document.getElementById("pro");
+    var item3 = document.getElementById("ami");
+    var item4 = document.getElementById("vit");
+    var item5 = document.getElementById("tre");
+  /* création de message pour chaque produit */
+    var preWorkout = "";
+    var proteinePowder = "";
+    var acidesAminos = "";
+    var vitamines = "";
+    var tren = "";
+  /* des if pour vérifier ceux qui ont été croché dans le check box */
+  /* if créér des messages pour chaque item */
+    if (item1.checked) {
+      preWorkout = table[0][0] + "&nbsp &nbsp &nbsp &nbsp &nbsp" + table[0][1] + "$";
+    }
+    if (item2.checked) {
+      proteinePowder = table[1][0] + "&nbsp &nbsp &nbsp &nbsp &nbsp" + table[1][1] + "$";
+    }
+    if (item3.checked) {
+      acidesAminos = table[2][0] + "&nbsp &nbsp &nbsp &nbsp &nbsp" + table[2][1] + "$";
+    }
+    if (item4.checked) {
+      vitamines = table[3][0] + "&nbsp &nbsp &nbsp &nbsp &nbsp" + table[3][1] + "$";
+    }
+    if (item5.checked) {
+      tren = table[4][0] + "&nbsp &nbsp &nbsp &nbsp &nbsp" + table[4][1] + "$";
+    }
+  
+  /* variables commence à 0 pour ajouter plus tard */
+    var total = 0;
+    var sous = 0;
+    var taxe = 0;
+    var taxeNom = "";
+/*   vérifie les boites cochés pour faire calcules */
+    if (liste[0].checked) {
+      total = total + table[0][1];
+      sous = sous + table[0][1];
+    }
+    if (liste[1].checked) {
+      total = total + table[1][1];
+      sous = sous + table[1][1];
+    }
+    if (liste[2].checked) {
+      total = total + table[2][1];
+      sous = sous + table[2][1];
+    }
+    if (liste[3].checked) {
+      total = total + table[3][1];
+      sous = sous + table[3][1];
+    }
+    if (liste[4].checked) {
+      total = total + table[4][1];
+      sous = sous + table[4][1];
+    }
+  /* détermine le montant de taxe et calcule. Slice les deux premieres lettres de la province  */
+    if (prov == "Ontario") {
+      taxe = total * 0.13;
+      total = total * 1.13;
+      taxeNom = prov.slice(0, 2).toUpperCase() + " 13%";
+    } else if (prov == "Quebec") {
+      taxe = total * 0.15;
+      total = total * 1.15;
+      taxeNom = prov.slice(0, 2).toUpperCase() + " 15%";
+    }
+  
+  
+/* ce qui affiche dans le div lorsque le bouton est clické */
+    var message = "<h3 class='recu1'>Reçu</h3>" +preWorkout + "<br> " + proteinePowder + "<br> " + acidesAminos + "<br> " + vitamines + "<br> " + tren + "<hr>Sous-Total: &nbsp &nbsp &nbsp &nbsp &nbsp" + sous.toFixed(2) + "$<br>Taxes (" + taxeNom + "): &nbsp &nbsp &nbsp &nbsp &nbsp" + taxe.toFixed(2) + "$<br>Total: &nbsp &nbsp &nbsp &nbsp &nbsp" + total.toFixed(2);
+/* affiche le message dans html */
+    afficheRecu.innerHTML = message;
+
+
+  }
+
+</script>
+   
+  </body>
+
+</html>
