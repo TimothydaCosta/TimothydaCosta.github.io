@@ -3,40 +3,80 @@
   <head>
     <meta charset="utf-8">
     <title>Document noms</title>
-    <script>
-    var name=prompt("Prenom");
-var middlename=prompt("Nom du milieu");
-var lastname=prompt("Nom de famille");
+        </head>
+        <body>
+     
+    <label for="nom">Nom:</label>
+    <input type="text" id="nom">
+    <br><br>
+
+     
+    <label for="nom2">Nom du Milieu:</label>
+    <input type="text" id="nom2">
+    <br><br>
+    
+     
+    <label for="nom3">Surnom:</label>
+    <input type="text" id="nom3">
+    <br><br>
+    
+    
+    <input type="button" id="btnInitial" onclick="initialAf()"  value="Initiales">
+    <input type="button" id="btnMilieu" onclick="nomComplet()"  value="Nom complet">
+    <input type="button" id="btnUser" onclick="nomUser()"  value="Utilisateur">
+    
+     <div id="divAffiche">
+    </div>
+    <div id="divAffich">
+    </div>
+    <div id="divAffic">
+    </div>
+
+<script>function initialAf(){
+var affiche1 = document.getElementById("divAffiche")
+var nom=document.getElementById("nom").value;
+var nom2=document.getElementById("nom2").value;
+var nom3=document.getElementById("nom3").value;
+
+var initial= nom.slice(0, 1).toUpperCase();
+var initial2= nom2.slice(0, 1).toUpperCase();
+var initial3= nom3.slice(0, 1).toUpperCase();
+
+var message1 = (initial + "." + initial2 + "." + initial3);
+
+affiche1.innerHTML = message1
+}
+
+function nomComplet(){
+var affiche2=document.getElementById("divAffich");
+
+var nom=document.getElementById("nom").value;
+var nom2=document.getElementById("nom2").value;
+var nom3=document.getElementById("nom3").value;
 
 
-var initial= name.slice(0, 1).toUpperCase();
-var initial2= middlename.slice(0, 1).toUpperCase();
-var initial3= lastname.slice(0, 1).toUpperCase();
+var message2 = (nom + " " + nom2 + " " + nom3);
+
+affiche2.innerHTML = message2;
+}
+
+function nomUser(){
+var affiche=document.getElementById("divAffic");
+
+var nom=document.getElementById("nom").value;
+var nom2=document.getElementById("nom2").value;
+var nom3=document.getElementById("nom3").value;
+
+var utilise= nom.slice(0, 1).toLowerCase();
+var utilise1= nom2.slice(0, 1).toLowerCase();
+var utilise2= nom3.toLowerCase();
 
 
-var utilise= name.slice(0, 1).toLowerCase();
-var utilise1= middlename.slice(0, 1).toLowerCase();
-var utilise2= lastname.toLowerCase();
+var message = (utilise + utilise1 + utilise2);
 
-    </script>
-  </head>
-  <body>
-    <h1>
-        <script type="text/javascript">
-          document.write('Vos initiales sont: ' + initial + '.' + initial2 + '.' + initial3);
-        </script>
-    </h1>
-
-    <h1>
-      <script type="text/javascript">
-          document.write('Votre nom au complet est: ' + name + ' ' + middlename + ' ' + lastname);
-        </script>
-    </h1>
-
-    <h1>
-      <script type="text/javascript">
-          document.write('Votre nom d\'utilisateur est: ' + utilise + utilise1 + utilise2);
-        </script>
-    </h1>
+affiche.innerHTML = message;;
+}
+</script>
+ 
   </body>
 </html>
